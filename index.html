@@ -45,16 +45,16 @@
       </div>
       <ul>
         <li>
-          <a href="#" class="section-scroll">HOME</a>
+          <a href="#h" class="section-scroll">HOME</a>
         </li>
         <li>
           <a href="#about" class="section-scroll">ABOUT</a>
         </li>
         <li>
-          <a href="#skills" class="section-scroll">SKILLS</a>
+          <a href="#projects" class="section-scroll">PROJECTS</a>
         </li>
         <li>
-          <a href="#g" class="section-scroll">PROJECTS</a>
+          <a href="#skills" class="section-scroll">SKILLS</a>
         </li>
         <li>
           <a href="#contact" class="section-scroll">CONTACT</a>
@@ -73,16 +73,16 @@
           </div>
           <ul class="extra-navbar nav navbar-nav navbar-right">
             <li>
-              <a href="#" class="section-scroll">HOME</a>
+              <a href="#h" class="section-scroll">HOME</a>
             </li>
             <li>
               <a href="#about" class="section-scroll">ABOUT</a>
             </li>
             <li>
-              <a href="#skills" class="section-scroll">SKILLS</a>
+              <a href="#projects" class="section-scroll">PROJECTS</a>
             </li>
             <li>
-              <a href="#g" class="section-scroll">PROJECTS</a>
+              <a href="#skills" class="section-scroll">SKILLS</a>
             </li>
             <li>
               <a href="#contact" class="section-scroll">CONTACT</a>
@@ -100,7 +100,13 @@
       <div class="hero-caption container centered">
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
-            <h1 class="hero-text">Hello, my name is <b>Ziyan Wang</b>.<br/>I create for the web.</h1>
+            <h1 class="hero-text">
+              Hello, my name is
+              <b>Ziyan Wang</b>.
+              <p> A <span class="typed-element"></span>
+              <span class="typed-cursor">|</span>
+              </p>
+            </h1>
           </div>
         </div><!--/row-->
 
@@ -128,25 +134,26 @@
       <div class="row">
         <h2 class="centered mb section-title">ABOUT ME</h2>
         <div class="col-md-4 about-me">
-          <i class="icon-cup"></i>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        </div><!--/col-md-6-->
-        <div class="col-md-4 about-me">
-          <i class="icon-earphones"></i>
+          <i class="icon-screen-desktop"></i>
           <p>I'm always eager to try new technologies. New CSS technique, new JS framework, new database language...anything.
-          <br />
-          <br />
-          I can spend hours browsing through cool UI elements, whether they are powered by CSS3 or JQuery.
-          <br />
-          <br />
-          I like working under pressure. Bringing something surprise to a demo before deadline is a wonderful feeling.
 
+          <p>I can spend hours browsing through cool UI elements, whether they are powered by CSS3 or JQuery.</p>
+
+          <p>I like working under pressure. Bringing something surprise to a demo before deadline is a wonderful feeling.
           </p>
         </div><!--/col-md-6-->
 
         <div class="col-md-4 about-me">
-          <i class="icon-screen-desktop"></i>
-          <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software.</p>
+          <i class="icon-cup"></i>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div><!--/col-md-6-->
+
+
+        <div class="col-md-4 about-me">
+          <i class="icon-earphones"></i>
+          <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+          <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software.</p>
         </div><!--/col-md-6-->
 
       </div><!--/row-->
@@ -162,11 +169,11 @@
     </div> -->
 
     <div id="g">
-      <div class="container">
+      <div class="container" id="projects">
         <div class="row centered">
           <h2>Check some of my latest works.</h2>
           <div class="col-md-8 col-md-offset-2">
-            <p>Contrary to popular belief, Lorem Ipsum is not simply random text.<br/>It has roots in a piece of classical Latin literature<br/>from 45 BC, making it over 2000 years old.</p>
+            <p>web app | game | mobile app</p>
 
           </div><!--/col-md-8-->
         </div><!--/row-->
@@ -263,7 +270,7 @@
        </div><!-- portfolio -->
     </div><!-- portfolio container -->
 
-    <div class="container mt container" id="skills">
+    <div class="container mt" id="skills">
         <div class="row skills centered">
           <h3 class="mb section-title">MY SKILLS</h3>
 
@@ -277,7 +284,7 @@
           </div>
           <div class="col-sm-3 col-xs-3 skill-item">
             <img src="assets/img/react.png" alt="">
-            <p>REACT</p>
+            <p>React</p>
           </div>
           <div class="col-sm-3 col-xs-3 skill-item">
             <img src="assets/img/redux.png" alt="">
@@ -307,9 +314,16 @@
       <div class="container" id="contact">
         <div class="row centered">
           <div class="col-md-8 col-md-offset-2">
-            <h1>I live in the amazing San Francisco</h1>
-            <h3 class="mb">Lorem Ipsum is simply dummy text<br/>of the printing and typesetting industry.</h3>
-            <button class="btn btn-conf btn-clear">Download my resume</button>
+            <h1>Looking for a developer?</h1>
+            <h3 class="mb">Feel free to drop me an email:
+              <a style="color: #fff; border-bottom: 1px dotted #fff" href="mailto:zywangca@gmail.com?subject=MailFromPersonalSite">zywangca@gmail.com
+              </a>
+            </h3>
+            <button class="btn btn-conf btn-clear" onclick="window.location.href='https://github.com/zw301'">
+              VIEW GITHUB
+            </button>
+            <button class="btn btn-conf btn-clear">DOWNLOAD RESUME</button>
+            </button>
           </div>
         </div><!--/row-->
       </div><!--/container-->
@@ -319,10 +333,9 @@
       <div class="container">
         <div class="row centered">
           <div class="col-md-8 col-md-offset-2">
-            <a href="#"><i class="ion-social-twitter"></i></a>
-            <a href="#"><i class="ion-social-dribbble"></i></a>
-            <a href="#"><i class="ion-social-instagram"></i></a>
-            <a href="#"><i class="ion-social-facebook"></i></a>
+            <a href="https://github.com/zw301"><i class="ion-social-github"></i></a>
+            <a href="mailto:zywangca@gmail.com?subject=MailFromPersonalSite"><i class="ion-email"></i></a>
+            <a href="https://www.linkedin.com/in/ziyan-wang-4149b6161/"><i class="ion-social-linkedin"></i></a>
           </div><!--/col-md-8-->
         </div>
       </div><!--/container-->
@@ -341,6 +354,7 @@
     <script src="assets/js/jquery.hoverex.min.js"></script>
     <script src="assets/js/jquery.prettyPhoto.js"></script>
     <script src="assets/js/jquery.isotope.min.js"></script>
+    <script src="assets/js/typed.min.js"></script>
     <script src="assets/js/custom.js"></script>
 
 
@@ -423,6 +437,8 @@
 
         $(window).on('resize', function () {
         setPortfolio();
+
+
       });
     })(jQuery);
     </script>
