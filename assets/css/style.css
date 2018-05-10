@@ -61,9 +61,9 @@ body {
 .centered {text-align: center}
 .mt {margin-top: 50px;}
 .mb {margin-bottom: 50px;}
-.mtb {margin-top: 50px; margin-bottom: 50px;}
-.mtb2 { margin-top: 100px; margin-bottom: 100px;}
-.ptb {padding-top: 80px; padding-bottom: 80px;}
+/* .mtb {margin-top: 50px; margin-bottom: 50px;} */
+/* .mtb2 { margin-top: 100px; margin-bottom: 100px;} */
+.ptb {padding-top: 80px;}
 
 .clear {
 	clear: both;
@@ -206,7 +206,7 @@ input {
 	/* padding-top: 5px; */
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 780px;
+	min-height: 100vh;
 	width: 100%;
 
     -webkit-background-size: 100%;
@@ -219,7 +219,6 @@ input {
     -o-background-size: cover;
     background-size: cover;
     color: #666;
-
 }
 
 #h .logo {
@@ -231,7 +230,6 @@ input {
 #h .logo h2{
 	margin: 0;
 	padding: 0;
-	/* font-weight: 900; */
 	color: #666;
 	letter-spacing: 1px;
 	font-size: 24px;
@@ -254,7 +252,9 @@ input {
 	margin-right: 40px;
 }
 
-
+.small-nav {
+	display: none
+}
 .navbar-custom {
 	background-color: transparent;
 	box-shadow:none;
@@ -262,13 +262,14 @@ input {
 .navbar-light {
 	background-color: rgba(255,255,255,0.95);
 	box-shadow: 0 1px 0 rgba(0,0,0,0.05);
-	/* box-shadow: none; */
 }
 
 .hero-caption {
-	margin-top: 200px;
-	/* margin-bottom: 160px; */
-	border: 1px soilid red;
+	position: relative;
+	top: 36vh;
+}
+.hero-text {
+
 }
 
 /* GREY SECTION */
@@ -339,6 +340,9 @@ input {
 
 
 /* CLIENTS */
+#skills {
+	padding-top: 60px;
+}
 .skills p {
 	margin: 0;
 	padding: 0;
@@ -448,4 +452,120 @@ input {
 
 .scroll-up i {
 	font-size: 20px;
+}
+
+#burger, .overlay-nav {
+	display: none;
+}
+
+/* @media (min-width: 769px) {
+	#burger {
+		display: none;
+	}
+} */
+
+@media (max-width: 950px) {
+	.skill-item img {
+		width: 100%;
+		max-width: 100px;
+	}
+}
+
+/* @media (max-width: 600px) {
+	.skill-item{
+		min-width: 90px;
+	}
+
+	.skill-item img {
+		width: 100%;
+		max-width: 70px;
+	}
+} */
+
+@media (max-width: 768px) {
+	.skill-item{
+		min-width: 90px;
+	}
+
+	.skill-item img {
+		width: 100%;
+		max-width: 70px;
+	}
+
+	.extra-navbar {
+		border: 1px solid red;
+		display: none;
+	}
+	#burger {
+		display: block;
+		position: absolute;
+		right: 20px;
+		top: 16px;
+		/* font-size: 20px; */
+	}
+
+	#burger i {
+		font-size: 24px;
+	}
+
+	#h .logo h2 {
+		margin-left: 10px;
+	}
+
+	.overlay-nav {
+		display: none;
+		position: fixed;
+	  top: 0;
+	  bottom: 0;
+	  right: 0;
+	  left: 0;
+	  background: rgba(0, 0, 0, 0.95);
+	  z-index: 10;
+		color: rgba(255, 255, 255, 0.6);
+		font-size: 18px;
+		text-align: center;
+	}
+
+	.overlay-nav ul {
+		color: #fff;
+		/* position: absolute; */
+		/* top: 30%; */
+		/* left: 40%; */
+		padding: 0;
+		margin: 0;
+		margin-top: 30%;
+	}
+
+	.overlay-footer {
+		position: relative;
+		top: 100px;
+		display: block;
+	}
+	.overlay-footer p {
+		font-size: 14px;
+		text-transform: uppercase;
+
+	}
+
+	.overlay-nav ul li {
+		list-style: none;
+		text-align: center;
+	}
+
+	.overlay-nav ul a {
+		display: block;
+		padding: 20px 0;
+		color: #fff;
+	}
+
+	#overlayclose {
+		position: absolute;
+		right: 20px;
+		top: 14px;
+		font-size: 24px;
+	}
+
+	.mt h4 {
+		font-size: 12px;
+	}
 }

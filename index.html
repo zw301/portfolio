@@ -17,6 +17,9 @@
     <link href="assets/css/ionicons.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+
+
 
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -36,6 +39,31 @@
   </head>
 
   <body>
+    <div class="overlay-nav" id="overlaynav">
+      <div id="overlayclose">
+        <i class="icon-close"></i>
+      </div>
+      <ul>
+        <li>
+          <a href="#" class="section-scroll">HOME</a>
+        </li>
+        <li>
+          <a href="#about" class="section-scroll">ABOUT</a>
+        </li>
+        <li>
+          <a href="#skills" class="section-scroll">SKILLS</a>
+        </li>
+        <li>
+          <a href="#g" class="section-scroll">PROJECTS</a>
+        </li>
+        <li>
+          <a href="#contact" class="section-scroll">CONTACT</a>
+        </li>
+      </ul>
+      <div class="overlay-footer">
+        <p class="copyright font-alt">Ziyan Wang</p>
+      </div>
+    </div>
 
     <div id="h">
       <div class="container header">
@@ -48,19 +76,25 @@
               <a href="#" class="section-scroll">HOME</a>
             </li>
             <li>
-              <a href="#" class="section-scroll">ABOUT</a>
+              <a href="#about" class="section-scroll">ABOUT</a>
             </li>
             <li>
-              <a href="#" class="section-scroll">SKILLS</a>
+              <a href="#skills" class="section-scroll">SKILLS</a>
             </li>
             <li>
-              <a href="#" class="section-scroll">PROJECT</a>
+              <a href="#g" class="section-scroll">PROJECTS</a>
             </li>
             <li>
-              <a href="#" class="section-scroll">CONTACT</a>
+              <a href="#contact" class="section-scroll">CONTACT</a>
             </li>
           </ul>
+          <div id="burger">
+            <i class="fas fa-bars"></i>
+          </div>
+
         </div><!--/logo-->
+
+
       </nav>
 
       <div class="hero-caption container centered">
@@ -71,26 +105,26 @@
         </div><!--/row-->
 
         <div class="row mt">
-          <div class="col-sm-4">
+          <div class="col-sm-4 col-xs-4">
             <i class="ion-ios7-monitor-outline"></i>
-            <h3>Web Design</h3>
+            <h4>Web Design</h3>
           </div><!--/col-md-4-->
 
-          <div class="col-sm-4">
+          <div class="col-sm-4 col-xs-4">
             <i class="ion-ios7-browsers-outline"></i>
-            <h3>UI Development</h3>
+            <h4>UI Development</h3>
           </div><!--/col-md-4-->
 
-          <div class="col-sm-4">
+          <div class="col-sm-4 col-xs-4">
             <i class="ion-ios7-copy-outline"></i>
-            <h3>Brand Identity</h3>
+            <h4>Brand Identity</h3>
           </div><!--/col-md-4-->
 
         </div><!--/row-->
       </div><!--/container-->
     </div><!--H-->
 
-    <div class="container ptb">
+    <div class="container ptb" id="about">
       <div class="row">
         <h2 class="centered mb section-title">ABOUT ME</h2>
         <div class="col-md-4 about-me">
@@ -229,39 +263,39 @@
        </div><!-- portfolio -->
     </div><!-- portfolio container -->
 
-    <div class="container mt container">
+    <div class="container mt container" id="skills">
         <div class="row skills centered">
-          <h3 class="mb section-title">SKILLS</h3>
+          <h3 class="mb section-title">MY SKILLS</h3>
 
-          <div class="col-sm-3">
+          <div class="col-sm-3 col-xs-3 skill-item">
             <img src="assets/img/javascript-logo.png" alt="">
             <p>JavaScript</p>
           </div>
-          <div class="col-sm-3">
+          <div class="col-sm-3 col-xs-3 skill-item">
             <img src="assets/img/ruby.png" alt="">
             <p>Ruby</p>
           </div>
-          <div class="col-sm-3">
+          <div class="col-sm-3 col-xs-3 skill-item">
             <img src="assets/img/react.png" alt="">
             <p>REACT</p>
           </div>
-          <div class="col-sm-3 ">
+          <div class="col-sm-3 col-xs-3 skill-item">
             <img src="assets/img/redux.png" alt="">
             <p>Redux</p>
           </div>
-          <div class="col-sm-3">
+          <div class="col-sm-3 col-xs-3 skill-item">
             <img src="assets/img/git.png" alt="">
             <p>GIT</p>
           </div>
-          <div class="col-sm-3">
+          <div class="col-sm-3 col-xs-3 skill-item">
             <img src="assets/img/rspec.png" alt="">
             <p>Rspec</p>
           </div>
-          <div class="col-sm-3">
+          <div class="col-sm-3 col-xs-3 skill-item">
             <img src="assets/img/HTML5.png" alt="">
             <p>HTML5</p>
           </div>
-          <div class="col-sm-3">
+          <div class="col-sm-3 col-xs-3 skill-item">
             <img src="assets/img/rails.png" alt="">
             <p>Rails</p>
           </div>
@@ -270,7 +304,7 @@
     </div><!--/.G-->
 
     <div id="sep">
-      <div class="container">
+      <div class="container" id="contact">
         <div class="row centered">
           <div class="col-md-8 col-md-offset-2">
             <h1>I live in the amazing San Francisco</h1>
