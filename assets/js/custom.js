@@ -57,7 +57,7 @@
 		document.getElementById("navbar").style.display = "block";
 
 	}
-	document.querySelectorAll('a').forEach(anchor => {
+	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 	    anchor.addEventListener('click', function (e) {
 	        e.preventDefault();
 
