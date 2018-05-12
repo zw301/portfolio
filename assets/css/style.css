@@ -413,6 +413,10 @@ input {
 	line-height: 150px;
 }
 
+.skill-item {
+	padding-bottom: 10px;
+}
+
 /* CONTACT SEPARATOR */
 #sep {
 	background: url(../img/sep.jpg) no-repeat center top;
@@ -513,6 +517,9 @@ input {
 	display: none;
 }
 
+.btn-big {
+	outline: 0 !important;
+}
 
 @media (max-width: 950px) {
 	.skill-item img {
@@ -521,18 +528,13 @@ input {
 	}
 }
 
-/* @media (max-width: 600px) {
-	.skill-item{
-		min-width: 90px;
-	}
-
-	.skill-item img {
-		width: 100%;
-		max-width: 70px;
-	}
-} */
-
 @media (max-width: 768px) {
+	.btn-big {
+		width: 100%;
+		margin-bottom: 10px;
+		outline: 0 !important; /* Remove outline */
+	}
+
 	.skill-item{
 		min-width: 90px;
 	}

@@ -56,7 +56,9 @@
 		document.getElementById("overlaynav").style.display = "none";
 		document.getElementById("navbar").style.display = "block";
 
+		document.body.style.overflow = 'visible';
 	}
+	
 	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 	    anchor.addEventListener('click', function (e) {
 	        e.preventDefault();
