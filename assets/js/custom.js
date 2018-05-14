@@ -58,7 +58,7 @@
 
 		document.body.style.overflow = 'visible';
 	}
-	
+
 	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 	    anchor.addEventListener('click', function (e) {
 	        e.preventDefault();
@@ -74,17 +74,10 @@
 	/* ---------------------------------------------- /*
 	 * Typed
 	/* ---------------------------------------------- */
-	// $(".typed-element").typed({
-	//   strings: ["UI/UX", "Front End", "Creative Developer"],
-	//   typeSpeed: 165,
-	//     startDelay: 100,
-	//     backSpeed: 70,
-	//     backDelay: 90,
-	//     showCursor: false
-	// });
+
 
 	var typed = new Typed(".typed-element", {
-	  strings: ["UI/UX", "Front End", "Creative Developer"],
+	  strings: ["Software Engineer", "Creative Software Engineer", "Passionate Creative Software Engineer"],
 		typeSpeed: 165,
 		startDelay: 100,
 		backSpeed: 70,
