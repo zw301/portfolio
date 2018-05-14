@@ -363,7 +363,10 @@ input {
 /* .portfolio-item p {margin:0px 0 30px;} */
 /* .portfolio-item h3 {margin:-10px 0 10px; font-size:16px; text-transform:uppercase;} */
 
-
+.he-wrap img {
+	width: 80%;
+	margin: 0 auto;
+}
 .tpl6 h3
 {
 	color:#fff;
@@ -527,9 +530,16 @@ input {
 		width: 100%;
 		max-width: 100px;
 	}
+
+	.he-wrap img {
+		width: 100%;
+		margin: 0 auto;
+	}
 }
 
 @media (max-width: 768px) {
+
+
 	.btn-big {
 		width: 100%;
 		margin-bottom: 10px;
