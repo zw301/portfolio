@@ -393,7 +393,7 @@ input {
 }
 
 .tpl6 .bg .a1 {
-	padding-top: 25%;
+	padding-top: 20%;
 }
 
 
@@ -539,13 +539,6 @@ input {
 
 @media (max-width: 768px) {
 
-
-	.btn-big {
-		width: 100%;
-		margin-bottom: 10px;
-		outline: 0 !important; /* Remove outline */
-	}
-
 	.skill-item{
 		min-width: 90px;
 	}
@@ -559,6 +552,7 @@ input {
 		border: 1px solid red;
 		display: none;
 	}
+
 	#burger {
 		display: block;
 		position: absolute;
@@ -631,5 +625,12 @@ input {
 
 	.mt h4 {
 		font-size: 12px;
+	}
+
+
+	.btn-big {
+		width: 100%;
+		margin-bottom: 10px;
+		outline: 0 !important; /* Remove outline */
 	}
 }
